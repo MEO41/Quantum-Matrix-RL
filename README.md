@@ -100,17 +100,13 @@ This custom environment simulates symbolic discovery of matrix multiplication.
 
 The agent receives a reward at each timestep defined by:
 
-$$
+\[
 r_t = -\|C_t - AB\|_2 - \alpha \cdot t - \beta \cdot \text{op\_cost}_t
-$$
+\]
 
-Where:
-
-- $\|C_t - AB\|_2$ is the Frobenius norm of the matrix multiplication error.
-- $t$ is the current step count (penalizes longer sequences).
-- $\text{op\_cost}_t$ is the symbolic or FLOP-based cost of the operation at time $t$.
-- $\alpha$, $\beta$ are hyperparameters controlling penalty weights.
-
+- *Accuracy loss*: \( \|C_t - AB\|_2 \)
+- *Step penalty*: \(\alpha \cdot t\)
+- *Operation cost penalty*: \(\beta \cdot \text{op\_cost}_t\)
 
 ---
 
