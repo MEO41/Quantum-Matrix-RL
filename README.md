@@ -49,15 +49,19 @@ This custom environment simulates symbolic discovery of matrix multiplication.
 
 ## 💰 Reward Function
 
-The reward at each step is computed as:
+The agent receives a reward at each timestep defined by:
 
-**r_t = -||C_t - AB||₂ - α · t - β · op_cost_t**
+$$
+r_t = -\|C_t - AB\|_2 - \alpha \cdot t - \beta \cdot \text{op\_cost}_t
+$$
 
 Where:
-- `||C_t - AB||₂` is the Frobenius norm of error
-- `t` is the step index
-- `op_cost_t` is the operation's symbolic or computational cost
-- `α`, `β` are hyperparameters for regularization
+
+- $\|C_t - AB\|_2$ is the Frobenius norm of the matrix multiplication error.
+- $t$ is the current step count (penalizes longer sequences).
+- $\text{op\_cost}_t$ is the symbolic or FLOP-based cost of the operation at time $t$.
+- $\alpha$, $\beta$ are hyperparameters controlling penalty weights.
+
 
 ---
 
@@ -190,7 +194,7 @@ plot_results("runs/quantum/", "Quantum Critic")
 ## 📘 References
 
 - [AlphaTensor: DeepMind, 2022](https://www.nature.com/articles/s41586-022-05172-4)
-- [PennyLane Documentation](https://docs.pennylane.ai/)
+- [TorchQuantum](https://github.com/mit-han-lab/torchquantum?tab=readme-ov-file)
 - [Soft Actor-Critic Paper](https://arxiv.org/abs/1801.01290)
 - [RL Book - Sutton & Barto](http://incompleteideas.net/book/the-book-2nd.html)
 
