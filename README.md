@@ -155,6 +155,18 @@ Ensure you have:
  - pennylane==0.32.0
 
 ---
+---
+
+## 🧪 How to Test
+
+This project includes unit tests and sanity checks to ensure all components are working correctly before training begins.
+
+### ✅ Run All Sanity Checks
+
+Run the full system check (environment, actor, critic, buffer, agent):
+
+```bash
+python tests/test_agent.py
 
 ### 2. Train an Agent
 
