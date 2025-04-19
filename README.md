@@ -192,13 +192,16 @@ pip install -r requirements.txt
 ```
 
 Ensure you have:
-- Python 3.8+
-- PyTorch
-- Gym
-- TorchQuantum
-- NumPy
-- Matplotlib
-- TensorBoard
+ - numpy==1.24.3
+ - torch==2.0.1
+ - torchvision==0.15.2
+ - gymnasium==0.28.1
+ - matplotlib==3.7.1
+ - pandas==2.0.2
+ - tensorboard==2.13.0
+ - tqdm==4.65.0
+ - torchquantum==0.1.0
+ - pennylane==0.32.0
 
 ---
 
