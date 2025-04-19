@@ -40,7 +40,7 @@ The system is based on **Quantum Off-Policy Actor-Critic** training with the fol
 This custom environment simulates symbolic discovery of matrix multiplication.
 
 ### 🔢 Inputs:
-- Two matrices \( A \in \mathbb{R}^{n 	imes n} \), \( B \in \mathbb{R}^{n 	imes n} \)
+- Two matrices $$\( A \in \mathbb{R}^{n 	imes n} \), \( B \in \mathbb{R}^{n 	imes n} \)$$
 - Flattened into state observations: `[A_flat | B_flat]`
 
 ### 🎮 Actions:
