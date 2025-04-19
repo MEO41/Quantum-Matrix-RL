@@ -49,18 +49,14 @@ This custom environment simulates symbolic discovery of matrix multiplication.
 
 ### 💸 Reward Function:
 
-### 💸 Reward Function:
-
 \[
-r_t = -\|C_t - AB\|_2 - alpha \cdot t - beta \cdot 	ext{op\_cost}_t
+r_t = -\|C_t - AB\|_2 - \alpha \cdot t - \beta \cdot \text{op\_cost}_t
 \]
 
 - \( \|C_t - AB\|_2 \): Frobenius norm of error
 - \( t \): step index (penalizes long algorithms)
 - `op_cost`: symbolic or FLOP-based cost for each operation
-- \(alpha, beta\): hyperparameters to balance reward components
-
----
+- \(\alpha, \beta\): hyperparameters to balance reward components
 
 ---
 
