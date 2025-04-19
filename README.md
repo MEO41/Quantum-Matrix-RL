@@ -167,7 +167,7 @@ Run the full system check (environment, actor, critic, buffer, agent):
 
 ```bash
 python tests/test_agent.py
-
+```
 ### 2. Train an Agent
 
 **Train with Classical Critic**:
