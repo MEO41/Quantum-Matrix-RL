@@ -128,7 +128,7 @@ The optimal RL agent should:
 
 Quantum Q-value approximation is used to stabilize learning:
 
-- Implemented with **PennyLane** or **Qiskit**
+- Implemented with **TorchQuantum**
 - Parameterized circuits: RX, RY, RZ rotations + CNOT entanglement
 - Classical → quantum encodings map \((s, a)\) into circuit observables
 - Expectation values output Q-values used in target updates
@@ -195,7 +195,7 @@ Ensure you have:
 - Python 3.8+
 - PyTorch
 - Gym
-- PennyLane (or Qiskit)
+- TorchQuantum
 - NumPy
 - Matplotlib
 - TensorBoard
@@ -276,7 +276,7 @@ The optimal RL agent should:
 
 Quantum Q-value approximation is used to stabilize learning:
 
-- Implemented with **PennyLane** or **Qiskit**
+- Implemented with **TorchQuantum**
 - Parameterized circuits: RX, RY, RZ rotations + CNOT entanglement
 - Classical → quantum encodings map \((s, a)\) into circuit observables
 - Expectation values output Q-values used in target updates
@@ -343,7 +343,7 @@ Ensure you have:
 - Python 3.8+
 - PyTorch
 - Gym
-- PennyLane (or Qiskit)
+- TorchQuantum
 - NumPy
 - Matplotlib
 - TensorBoard
