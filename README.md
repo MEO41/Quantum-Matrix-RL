@@ -172,12 +172,12 @@ python tests/test_agent.py
 
 **Train with Classical Critic**:
 ```bash
-python main.py --critic classic --env MatrixMultiplyDiscoveryEnv --steps 100000
+python main.py --mode classic --env MatrixMultiplyDiscoveryEnv --episodes 100000
 ```
 
 **Train with Quantum Critic**:
 ```bash
-python main.py --critic quantum --env MatrixMultiplyDiscoveryEnv --steps 100000
+python main.py --mode quantum --env MatrixMultiplyDiscoveryEnv --episodes 100000
 ```
 
 ---
